@@ -1,0 +1,196 @@
+/* ExamStu page container */
+.examstu-container {
+    padding-top: 80px;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.examstu-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 17%;
+    width: 67.92%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.sidebar.open + .examstu-body{
+    margin-left: 28% !important;
+}
+
+.examstu-courses{
+    background-color: #2c3e50;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 18px;
+}
+
+.examstu-courses span{
+    margin-left: 2px;
+}
+
+.examstu-table {
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+ 
+.examstu-table:hover{
+    cursor: pointer;
+}
+
+.take-exam-btn{
+    background-color: #2c3e50;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#take-exam-icon{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.take-exam-btn:hover {
+    background-color: #333;
+}
+
+.delete-exam-btn{
+    background-color: #2c3e50;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#delete-exam-icon{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.delete-exam-btn:hover {
+    background-color: #333;
+}
+
+#edit-exam-icon{
+    font-size: 18px;
+}
+
+/* Responsive styles for max-width: 768px */
+@media (max-width: 768px) {
+    .examstu-body {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .sidebar.open + .examstu-body {
+        width:500px !important;
+        margin-left: 30% !important;
+    }
+
+    .examstu-courses {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    td, th {
+        padding: 15px;
+    }
+
+    th {
+        font-size: 18px;
+    }
+
+    td {
+        font-size: 17px;
+    }
+
+    .take-exam-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    #take-exam-icon {
+        font-size: 16px;
+    }
+
+    .delete-exam-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    #delete-exam-icon {
+        font-size: 14px;
+    }
+
+    #edit-exam-icon{
+        font-size: 17px;
+    }
+}
+
+/* Responsive styles for max-width: 576px */
+@media (max-width: 576px) {
+    .examstu-body {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .sidebar.open + .examstu-body {
+        margin-left: 36% !important;
+        width: 60% !important;
+    }
+
+    .examstu-courses {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    td, th {
+        padding: 8px !important;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
+    .take-exam-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    #take-exam-icon {
+        font-size: 14px;
+    }
+
+    
+    .delete-exam-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    #delete-exam-icon {
+        font-size: 12px;
+    }
+
+    #edit-exam-icon{
+        font-size: 15px;
+    }
+}
+
+
+  
+
+  

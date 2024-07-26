@@ -1,0 +1,141 @@
+/* Marks page container */
+.marks-container {
+    padding-top: 80px;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.marks-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 20%;
+    margin-bottom: 25%;
+    width: 67.92%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.sidebar.open + .marks-body{
+    margin-left: 28% !important;
+}
+
+.marks-courses{
+    background-color: #2c3e50;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 18px;
+}
+
+.marks-table {
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+  
+.take-exam-btn{
+    background-color: #2c3e50;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#take-exam-icon{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.take-exam-btn:hover {
+    background-color: #333;
+}
+
+/* Responsive styles for max-width: 768px */
+@media (max-width: 768px) {
+    .marks-body {
+        margin-left: 10%;
+        width: 80%;
+        margin-bottom: 30% !important;
+    }
+
+    .sidebar.open + .marks-body {
+        margin-left: 30% !important;
+        width: 500px !important;
+    }
+
+    .marks-courses {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    th {
+        font-size: 18px;
+    }
+
+    td {
+        font-size: 17px;
+    }
+
+    .take-exam-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    #take-exam-icon {
+        font-size: 16px;
+    }
+}
+
+/* Responsive styles for max-width: 576px */
+@media (max-width: 576px) {
+    .marks-body {
+        margin-bottom: 45% !important;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .sidebar.open + .marks-body {
+        margin-left: 35% !important;
+        width: 60% !important;
+    }
+
+    .marks-courses {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
+    .take-exam-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    #take-exam-icon {
+        font-size: 14px;
+    }
+}
+
+
+  
+
+  

@@ -1,0 +1,215 @@
+/* Home.css */
+
+/* Home page container */
+.container-fluid {
+    padding-top: 80px;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg'); /* Home page container background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
+}
+
+/* Home page body */
+.mt-5 {
+    margin-top: 6rem; 
+    text-align: center;
+    color: white;
+    padding: 0 10px;
+}
+
+/* Home page body h1 */
+.mt-5 h1 {
+    font-size: 70px; 
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Home page body h3 */
+.mt-5 h3 {
+    font-size: 40px; 
+    margin: 10px;
+    color: black;
+}
+
+/* Home page body p */
+.mt-5 p {
+    font-size: 25px; 
+    margin: 10px;
+    color: black;
+}
+
+/* Home page body h5 */
+.mt-5 h5 {
+    font-weight: bold;
+    font-size: 33px; 
+    color: black;
+    margin: 15px 10px;
+}
+
+/* student signup button */
+.signup-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    height: 40px;
+}
+
+/* student signup button a */
+.signup-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 53px;
+    font-size: 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* student signup button a hover */
+.signup-button a:hover {
+    background-color: #333;
+}
+
+/* signup icon */
+.fas{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* LogoutSuccesspage style */
+
+.mt-6 {
+    margin-top: 7.5rem; 
+    text-align: center;
+    color: white;
+    padding: 0 10px;
+}
+
+.mt-6 h1 {
+    font-size: 60px; 
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.mt-6 p {
+    font-size: 30px; 
+    margin: 10px;
+    color: black;
+}
+
+.backtohome {
+    margin-top: 50px; 
+    margin-bottom: 20%;
+}
+
+.backtohome a {
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.backtohome a:hover{
+    background-color: #333;
+}
+
+.backtohome i {
+    margin-left: 5px; 
+}
+
+/* Home page Media Queries */
+
+/* Medium (md) divices breackpoints 768px */
+@media (max-width: 768px) {
+    .mt-5 h1 {
+        font-size: 50px;
+    }
+
+    .mt-5 h3 {
+        font-size: 30px;
+    }
+
+    .mt-5 p {
+        font-size: 22px;
+    }
+
+    .mt-5 h5 {
+        font-size: 26px;
+    }
+
+    .signup-button a {
+        font-size: 16px;
+        width: 110px;
+        height: 45px;
+    }
+
+    /* LogoutSuccessPage Responsive 768px */
+    .mt-6 h1{
+        font-size: 40px;
+    }
+
+    .mt-6 p{
+        font-size: 21px;
+    }
+
+    .backtohome { 
+        margin-top: 40px;
+        margin-bottom: 35%;
+    }    
+}
+
+/* Small (sm) divices breackpoints 576px */
+@media (max-width: 576px) {
+    .mt-5 h1 {
+        font-size: 40px;
+    }
+
+    .mt-5 h3 {
+        font-size: 25px;
+    }
+
+    .mt-5 p {
+        font-size: 20px;
+    }
+
+    .mt-5 h5 {
+        font-size: 24px;
+    }
+
+    .signup-button a {
+        font-size: 14px;
+        width: 100px;
+        height: 40px;
+    }
+
+    /* LogoutSuccessPage Responsive 576px */
+    .mt-6{
+        margin-top: 10rem;
+    }
+    .mt-6 h1{
+        font-size: 33px;
+    }
+
+    .mt-6 p{
+        font-size: 15px;
+    } 
+    
+    .backtohome { 
+        margin-top: 30px;
+        margin-bottom: 43%;
+    } 
+}

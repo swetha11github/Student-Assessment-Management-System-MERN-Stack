@@ -1,0 +1,182 @@
+/* DashboardStu page container */
+.dashboardstu-container {
+    padding-top: 80px;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Main dashboard content */
+.dashboardstu {
+    margin: 8em 0em 8em 0em;
+    min-height: 315px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+/* Total exam card */
+.dashboard-exam {
+    width: 500px;
+    height: 150px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px;
+}
+
+.dashboard-exam p {
+    margin: 30px 0px 10px 30px;
+    font-size: 23px;
+    color: white;
+}
+
+.dashboard-exam p:hover{
+    color: #ccc;
+}
+
+.dashboard-exam a{
+    text-decoration: none !important; 
+}
+
+#exam-icon1 {
+    margin: 0px 0px 10px 30px;
+    font-size: 24px;
+}
+
+#add-exam-icon{
+    color: white;
+    margin: 0px 0px 10px 30px;
+    font-size: 26px;
+}
+
+#add-exam-icon:hover{
+    color: #ccc;
+}
+
+.icon-count-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-count i {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 380px !important;
+}
+
+.count {
+    font-size: 35px;
+}
+
+#view-exam-icon{
+    margin: 0px 0px 10px 30px;
+    font-size: 26px;
+    color: white;
+}
+
+#view-exam-icon:hover{
+    color: #ccc;
+}
+
+.sidebar.open + .dashboardstu {
+    margin-left: 28%;
+}
+
+/* Total question card */
+.dashboard-question {
+    width: 500px;
+    height: 150px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px;
+}
+
+.dashboard-question a{
+    text-decoration: none !important; 
+}
+
+.dashboard-question p {
+    margin: 30px 0px 10px 30px;
+    font-size: 23px;
+    color: white;
+}
+
+.dashboard-question:hover{
+    cursor: pointer;
+}
+
+.dashboard-question p:hover{
+    color: #ccc;
+}
+
+.dashboard-exam:hover{
+    cursor: pointer;
+}
+
+#dashboard-question {
+    margin: 0px 0px 10px 30px;
+    font-size: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dashboardstu {
+        margin-left: 10%;
+        flex-direction: column !important;
+    }
+
+    .dashboard-exam,
+    .dashboard-question {
+        width: 85% !important;
+        margin-bottom: 20px;
+    }
+
+    .sidebar.open + .dashboardstu {
+        margin-left: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-count i {
+        margin-right: 180px !important;
+    }
+
+    .count {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .dashboardstu {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        margin: 8em 0 2em 0;
+    }
+
+    .dashboard-exam,
+    .dashboard-question {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-exam p,
+    .dashboard-question p {
+        margin: 20px 0px 10px 20px;
+    }
+
+    #exam-icon1,
+    #dashboard-question {
+        margin: 0px 0px 10px 20px;
+    }
+
+    .icon-count i {
+        margin-right: 250px !important;
+    }
+
+    .count {
+        font-size: 25px;
+    }
+}

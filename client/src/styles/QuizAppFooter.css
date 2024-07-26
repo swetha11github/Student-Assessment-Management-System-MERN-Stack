@@ -1,0 +1,39 @@
+/* QuizAppFooter */
+.footer {
+    padding: 20px;
+    color: black;
+    text-align: center;
+    border-top: 1px solid #2c3e50;
+    margin-top: 210px;
+}
+
+/* quiz app footer p */
+.footer p {
+    position: relative;
+    left: 0;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* quiz app footer p id:'copyright' */
+#copyright {
+    margin-top: 0;
+}
+
+/* Medium (md) devices breakpoints 768px */
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+/* Small (sm) devices breakpoints 576px */
+@media (max-width: 576px) {
+    .footer p {
+        font-size: 10px;
+        text-align: center;
+    }
+}

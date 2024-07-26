@@ -1,0 +1,78 @@
+/* Navbar1 */
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: flex-start; 
+}
+
+/* App name Quizzy Brainiacs */
+.navbar-brand {
+    font-size: 40px;
+    font-family: cursive;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px; 
+}
+
+/* Navbar items container */
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar items */
+.nav-item {
+    margin-left: 15px;
+}
+
+/* Navbar link */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 22px; /* Increased font size */
+}
+
+/* Navbar link hover */
+.nav-link:hover {
+    color: #ccc;
+}
+
+/* Medium (md) divices breackpoints 768px */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 20px; 
+    }
+}
+
+/* Small (sm) divices breackpoints 576px */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        align-items: flex-start; /* Align items to the left on small screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,258 @@
+/* DashboardTea page container */
+.dashboardtea-container {
+    padding-top: 80px;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.dashboardtea {
+    margin-top: 120px;
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    flex-wrap: wrap; 
+}
+
+.sidebar.open + .dashboardtea {
+    margin-left: 28%;
+}
+
+.total-student,
+.total-exam,
+.total-question {
+    flex: 1; 
+    max-width: 500px;
+    min-width: 250px; 
+    height: 150px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.total-student p,
+.total-exam p,
+.total-question p {
+    margin: 0;
+    font-size: 23px;
+}
+
+#student-icon,
+#exam-icon,
+#question-icon {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#exam-icon {
+    margin-left: 0px !important;
+}
+
+.icon-count-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-count-container i {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 235px;
+}
+
+.count {
+    font-size: 35px;
+}
+
+/* ExamTea page container */
+.examtea-container {
+    padding-top: 80px;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* AddExamTea page style */
+.addexamtea {
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-bottom: 17%;
+}
+
+.sidebar.open + .addexamtea {
+    margin-left: 28%;
+}
+
+.addexamtea h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.addexamtea form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px; 
+}
+
+.addexamtea form label {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.addexamtea form input,
+.addexamtea form textarea,
+.addexamtea form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.addexamtea form textarea {
+    resize: vertical; 
+    height: 100px; 
+}
+
+.addexamtea form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #2c3e50;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; 
+}
+
+.addexamtea form button:hover {
+    background-color: #333;
+}
+
+.view-exam-btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: #2c3e50;
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.view-exam-btn:hover {
+    background-color: #333;
+}
+
+#view-question-btn{
+    width: 155px;    
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboardtea {
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .total-student,
+    .total-exam,
+    .total-question {
+        margin-right: 10px;
+        margin-left: 10px;
+        min-width: 45%; 
+    }
+
+    .addexamtea {
+        margin-left: 10%;
+    }
+
+    .sidebar.open + .addexamtea {
+        margin-left: 35% !important;
+    }
+
+    #exam-tea {
+        margin-left: 10%;
+    }
+
+    .sidebar.open + #exam-tea {
+        margin-left: 35%;
+    }
+
+    .icon-count-container i {
+        font-size: 20px;
+    }
+
+    .count {
+        font-size: 30px;
+        margin-left: 150px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboardtea {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .sidebar.open + .dashboardtea {
+        width: 60%;
+        margin-left: 35%;
+    }
+
+    .total-student,
+    .total-exam,
+    .total-question {
+        margin-right: 0;
+    }
+
+    .addexamtea {
+        margin-left: 10%;
+    }
+
+    .sidebar.open + .addexamtea {
+        margin-left: 38% !important;
+    }
+
+    .sidebar.open + .addexamtea h1 {
+        font-size: 40px;
+    }
+
+    .sidebar.open + .addexamtea #add-question-heading{
+        font-size: 45px;
+    }
+
+    #exam-tea {
+        margin-left: 3% !important;
+    }
+
+    .sidebar.open + #exam-tea {
+        margin-left: 35% !important;
+    }
+
+    .count {
+        font-size: 30px;
+        margin-left: 0px !important;
+    }
+
+}

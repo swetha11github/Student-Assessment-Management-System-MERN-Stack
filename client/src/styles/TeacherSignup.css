@@ -1,0 +1,66 @@
+/* TeacherSignup.css */
+
+/* teachersignup page container */
+.teachersignup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://t4.ftcdn.net/jpg/03/01/59/71/360_F_301597103_xQNdJ1F2eKcVox3XAQ3ZZRiFvpKjtiPh.jpg'); /* teachersignup page container background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* teachersignup page container h2 */
+.teachersignup-container h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* teachersignup page form */
+.teachersignup-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+/* input field */
+.teachersignup-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* signup button */
+.teachersignup-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* signup button hover */
+.teachersignup-form button:hover {
+    background-color: #333;
+}
+
+/* Name,Email,Password is required An error occurred. Please try again. You already have an account. (error) */
+.error {
+    color: black;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* You already have an account. error will display to show the login button */
+.login-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
